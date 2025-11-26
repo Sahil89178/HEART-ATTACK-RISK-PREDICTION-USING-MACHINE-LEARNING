@@ -1,103 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Heart Disease Prediction</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-light">
-
-<div class="container bg-white p-4 mt-4 shadow rounded" style="max-width: 650px">
-
-<h2 class="text-center mb-4">Heart Disease Prediction</h2>
-
-<form action="/predict" method="POST">
-
-<div class="row g-3">
-
-<div class="col-md-6">
-<label>Age</label>
-<input type="number" class="form-control" name="Age" required>
-</div>
-
-<div class="col-md-6">
-<label>Sex</label>
-<select name="Sex" class="form-select">
-<option>M</option>
-<option>F</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<label>Chest Pain</label>
-<select name="ChestPainType" class="form-select">
-<option>ATA</option>
-<option>NAP</option>
-<option>ASY</option>
-<option>TA</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<label>Resting BP</label>
-<input type="number" class="form-control" name="RestingBP" required>
-</div>
-
-<div class="col-md-6">
-<label>Cholesterol</label>
-<input type="number" class="form-control" name="Cholesterol" required>
-</div>
-
-<div class="col-md-6">
-<label>Fasting Blood Sugar > 120 mg/dl?</label>
-<select name="FastingBS" class="form-select">
-<option>No</option>
-<option>Yes</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<label>Resting ECG</label>
-<select name="RestingECG" class="form-select">
-<option>Normal</option>
-<option>ST</option>
-<option>LVH</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<label>Max Heart Rate</label>
-<input type="number" class="form-control" name="MaxHR" required>
-</div>
-
-<div class="col-md-6">
-<label>Exercise Angina</label>
-<select name="ExerciseAngina" class="form-select">
-<option>No</option>
-<option>Yes</option>
-</select>
-</div>
-
-<div class="col-md-6">
-<label>Oldpeak</label>
-<input type="number" step="0.1" class="form-control" name="Oldpeak" required>
-</div>
-
-<div class="col-md-12">
-<label>ST Slope</label>
-<select name="ST_Slope" class="form-select">
-<option>Up</option>
-<option>Flat</option>
-<option>Down</option>
-</select>
-</div>
-
-</div>
-
-<button class="btn btn-primary w-100 mt-4">Predict</button>
-
-</form>
-</div>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/heart.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Attack Risk Prediction</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
+
